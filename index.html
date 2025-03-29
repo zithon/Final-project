@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Start</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="img/logo.svg" alt="logo">
+            <h3>Start</h3>
+        </div>
+        <div class="menu">
+            <a href="index.html" class="menu-button">Home</a>
+            <a href="portfolio.html" class="menu-button">Portfolio</a>
+            <a href="services.html" class="menu-button">Services</a>
+            <a href="contact.html" class="menu-button">Contact</a>
+        </div>
+
+        <div class="dropdown">
+            <button class="dropbtn">☰</button>
+            <div class="dropdown-content">
+              <a href="index.html">Home</a>
+              <a href="portfolio.html">Portfolio</a>
+              <a href="services.html">Services</a>
+              <a href="contact.html">Contact</a>
+              
+            </div>
+          </div>
+    </header>
+
+    <section class="welcome-section">
+        <div class="welcome-text">
+            <h3>W E L C O M E</h3>
+            <h2>Lorem ipsum dolor sit amet consectetur </h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit nemo hic quos, ab, dolor aperiam nobis cum est eos error ipsum, voluptate culpa nesciunt delectus iste?</p>
+            <a href="#" class="welcome-button">Explore</a>
+        </div>
+        <img src="img/Group-welcome.svg" alt="welcome-group">
+    </section>
+
+    <section class="partners-section">
+        <div class="partners-text">
+            <h3>P A R T N E R S</h3>
+            <h2>Lorem Ipsum Dolor</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+        <div class="partners-images">
+            <img src="img/google.svg" alt="google">
+            <img src="img/Microsoft.svg" alt="microsoft">
+            <img src="img/airbnb.svg" alt="airbnb">
+            <img class="facebook" src="img/facebook.svg" alt="facebook">
+            <img src="img/spotify.svg" alt="spotify">
+        </div>
+        <a class="partners-button" href="#">Learn More</a>
+    </section>
+
+    <section class="info-section">
+        <img src="img/people-main.svg" alt="people-info">
+        <div class="info-text">
+            <h2>Lorem ipsum dolor sit amet consectetur </h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit nemo hic quos, ab, dolor aperiam nobis cum est eos error ipsum, voluptate culpa nesciunt delectus iste?</p>
+            <a href="#" class="info-button">Learn More</a>
+        </div>
+    </section>
+
+    <section class="info-section">
+        <div class="info-text">
+            <h2>Lorem ipsum dolor sit amet consectetur </h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit nemo hic quos, ab, dolor aperiam nobis cum est eos error ipsum, voluptate culpa nesciunt delectus iste?</p>
+            <a href="#" class="info-button">Learn More</a>
+        </div>
+        <img src="img/people-main-2.svg" alt="people-info">
+    </section>
+
+    <section class="team-section">
+        <div class="partners-text">
+            <h3>T E A M</h3>
+            <h2>Our Talents</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur Suscipit nemo hic quos, ab.</p>
+        </div>
+        <div class="our-team">
+            <div class="team-card-wrapper">
+                <div class="person">
+                    <img class="avatar" src="img/avatar.svg" alt="avatar">
+                    <div class="person-info">
+                        <h3>Peg Legge</h3>
+                        <p>CEO</p>
+                    </div>
+                </div>
+            </div>
+            <div class="team-card-wrapper">
+                <div class="person">
+                    <img class="avatar" src="img/avatar-2.svg" alt="avatar">
+                    <div class="person-info">
+                        <h3>Richard Guerra</h3>
+                        <p>CTO</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="team-card-wrapper">
+                <div class="person">
+                    <img class="avatar" src="img/avatar-3.svg" alt="avatar">
+                    <div class="person-info">
+                        <h3>Alexandra Stolz</h3>
+                        <p>Designer</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="team-card-wrapper">
+                <div class="person">
+                    <img class="avatar" src="img/avatar-4.svg" alt="avatar">
+                    <div class="person-info">
+                        <h3>Janet Bray</h3>
+                        <p>DEVELOPER</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="team-button">View Team</a>
+    </section>
+
+    <footer>
+        <div class="footer-images">
+            <a href="#"><img src="img/facebook-ico.svg" alt="facebook"></a>
+            <a href="#"><img src="img/insagram-ico.svg" alt="instagram"></a>
+            <a href="#"><img src="img/twitter-ico.svg" alt="twitter"></a>
+            <a href="#"><img src="img/pinterest-ico.svg" alt="pinterest-ico"></a>
+            <a href="#"><img src="img/tiktok-ico.svg" alt="tiktok"></a>
+            <a href="#"><img src="img/whatsup-ico.svg" alt="whatsup"></a>
+            <a href="#"><img src="img/youtube-ico.svg" alt="youtube"></a>
+        </div>
+
+        <div>
+            <p>© Start, 2022. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+    <script>
+        document.querySelector(".menu-btn").addEventListener("click", function() {
+            document.querySelector(".mobile-menu").classList.toggle("show");
+        });
+    </script>
+</body>
+</html>
