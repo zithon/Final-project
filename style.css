@@ -314,6 +314,66 @@ header a:hover {
         text-decoration: none;
     }
 
+    .team-slider {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        overflow: hidden;
+        max-width: 1440px;
+        margin: auto;
+        padding: 0 10px;
+        box-sizing: border-box;
+    }
+    
+    .slider-container {
+        width: calc(4 * 279px + 3 * 47px);
+        overflow: visible;
+        padding-top: 40px;
+        padding-bottom: 200px;
+    }
+    
+    .slider-wrapper {
+        display: flex;
+        gap: 47px;
+        margin-right: 40px;
+        transition: transform 0.5s ease-in-out;
+    }
+    
+    .person {
+        height: 319px;
+        width: 279px;
+        flex-shrink: 0;
+        box-sizing: border-box;
+        border-radius: 10px;
+        padding: 10px;
+    }
+    
+    /* Кнопки */
+    .prev, .next {
+        background: none;
+        border: none;
+        font-size: 24px;
+        cursor: pointer;
+        position: absolute;
+        top: 77%;
+        transform: translateY(-50%);
+        background: rgba(0,0,0,0.5);
+        color: white;
+        padding: 15px 20px;
+        z-index: 1;
+    }
+    
+    .prev {
+        border-radius: 30px;
+        margin-right: 100px;
+    }
+    
+    .next {
+        border-radius: 30px;
+        margin-left: 100px;
+    }
+
     /* FOOTER */
 
     footer {
@@ -868,6 +928,69 @@ header a:hover {
         transform: rotateY(15deg) rotateX(10deg);
         box-shadow: 6px 8px 20px rgba(0, 0, 0, 0.3);
     }
+
+    .team-slider {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        overflow: hidden;
+        margin: auto;
+        padding: 0 3px;
+        box-sizing: border-box;
+    }
+    
+    .slider-container {
+        display: flex;
+        justify-content: center;
+        width: 530px;
+        height: calc(300px * 4 + 3 *47px);
+        max-width: 500px;
+        overflow: hidden;
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+    
+    .slider-wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        transition: transform 0.5s ease-in-out;
+    }
+    
+    .person {
+        width: 290px;
+        height: auto;
+        border-radius: 10px;
+        padding: 10px;
+    }
+    
+    .prev, .next {
+        position: absolute;
+        background: rgba(0, 0, 0, 0.5);
+        color: white;
+        border: none;
+        font-size: 24px;
+        cursor: pointer;
+        padding-top: 8px;
+        padding-bottom: 12px;
+        padding-left: 15px;
+        padding-right: 15px;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 10;
+        border-radius: 30px;
+    }
+    
+    .prev {
+        left: 0px;
+    }
+    
+    .next {
+        right: 0px;
+    }
+    
 
     .avatar {
         margin-top: 20px;
