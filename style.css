@@ -944,7 +944,7 @@ header a:hover {
     .slider-container {
         display: flex;
         justify-content: center;
-        width: 530px;
+        width: 375px;
         height: calc(300px * 4 + 3 *47px);
         max-width: 500px;
         overflow: hidden;
@@ -967,7 +967,8 @@ header a:hover {
     }
     
     .prev, .next {
-        position: absolute;
+        display: flex;
+        flex-direction: row;
         background: rgba(0, 0, 0, 0.5);
         color: white;
         border: none;
@@ -983,6 +984,12 @@ header a:hover {
         border-radius: 30px;
     }
     
+    .button-flex {
+        gap: 20px;
+        display: flex;
+        flex-direction: row;
+    }
+
     .prev {
         left: 0px;
     }
