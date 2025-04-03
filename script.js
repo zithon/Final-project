@@ -17,8 +17,8 @@ document.addEventListener("DOMContentLoaded", function () {
         console.log("Запущен десктопный слайдер");
 
         slider = document.querySelector(".slider-wrapper");
-        prevBtn = document.querySelector(".prev");
-        nextBtn = document.querySelector(".next");
+        prevBtn = document.querySelector(".prev-desktop");
+        nextBtn = document.querySelector(".next-desktop");
 
         index = 0;
         const totalSlides = document.querySelectorAll(".person").length;
@@ -60,7 +60,7 @@ document.addEventListener("DOMContentLoaded", function () {
         index = 0;
         const totalSlides = document.querySelectorAll(".person").length;
         const slidesPerPage = 4;
-        const slideWidth = 300 + 37; // Ширина карточки + отступ
+        const slideWidth = 300 + 35; // Ширина карточки + отступ
 
         function updateSliderPosition() {
             slider.style.transform = `translateY(-${index * slideWidth}px)`;

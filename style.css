@@ -327,6 +327,8 @@ header a:hover {
     }
     
     .slider-container {
+        display: flex;
+        flex-direction: column;
         width: calc(4 * 279px + 3 * 47px);
         overflow: visible;
         padding-top: 40px;
@@ -350,7 +352,7 @@ header a:hover {
     }
     
     /* Кнопки */
-    .prev, .next {
+    .prev-desktop, .next-desktop {
         background: none;
         border: none;
         font-size: 24px;
@@ -363,13 +365,19 @@ header a:hover {
         padding: 15px 20px;
         z-index: 1;
     }
+
+    .button-flex {
+        display: none;
+        width: 0;
+        height: 0;
+    }
     
-    .prev {
+    .prev-desktop {
         border-radius: 30px;
         margin-right: 100px;
     }
     
-    .next {
+    .next-desktop {
         border-radius: 30px;
         margin-left: 100px;
     }
@@ -941,6 +949,7 @@ header a:hover {
         box-sizing: border-box;
     }
     
+    
     .slider-container {
         display: flex;
         justify-content: center;
@@ -982,6 +991,12 @@ header a:hover {
         transform: translateY(-50%);
         z-index: 10;
         border-radius: 30px;
+    }
+
+    .prev-desktop, .next-desktop {
+        display: none;
+        width: 0;
+        height: 0;
     }
     
     .button-flex {
